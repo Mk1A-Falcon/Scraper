@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://2yvq6yiiep7y"]
 
+[ext_resource type="Script" uid="uid://boerrm2adptrc" path="res://scripts/main_menu.gd" id="1_flqon"]
 [ext_resource type="Texture2D" uid="uid://d3ehevwonacdi" path="res://assets/white bg 1152x648 i think idk.png" id="1_l6cm7"]
 [ext_resource type="FontFile" uid="uid://drlguo8ovg2x7" path="res://assets/audex/Audex-Regular.otf" id="2_ekxnf"]
 [ext_resource type="Texture2D" uid="uid://cvwuji1odi7gv" path="res://assets/buttons/labeled/button_play_normal.png" id="3_8ln24"]
@@ -13,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cu4kxhj4hsn7n" path="res://assets/buttons/labeled/button_quit_hover.png" id="8_5dd4i"]
 
 [node name="Main_Menu" type="Node2D" unique_id=1743025386]
+script = ExtResource("1_flqon")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1174820067]
 offset_right = 40.0
@@ -42,20 +44,24 @@ offset_right = 963.0
 offset_bottom = 499.0
 scale = Vector2(1.52, 1.3452296)
 
-[node name="TextureButton" type="TextureButton" parent="VBoxContainer" unique_id=483311748]
+[node name="Play" type="TextureButton" parent="VBoxContainer" unique_id=483311748]
 layout_mode = 2
 texture_normal = ExtResource("5_oa1go")
 texture_pressed = ExtResource("4_rtw2f")
 texture_hover = ExtResource("3_8ln24")
 
-[node name="TextureButton3" type="TextureButton" parent="VBoxContainer" unique_id=2113809780]
+[node name="Credits" type="TextureButton" parent="VBoxContainer" unique_id=2113809780]
 layout_mode = 2
 texture_normal = ExtResource("5_5dd4i")
 texture_pressed = ExtResource("6_lgwnu")
 texture_hover = ExtResource("7_flqon")
 
-[node name="TextureButton2" type="TextureButton" parent="VBoxContainer" unique_id=1405511553]
+[node name="Quit" type="TextureButton" parent="VBoxContainer" unique_id=1405511553]
 layout_mode = 2
 texture_normal = ExtResource("8_5dd4i")
 texture_pressed = ExtResource("6_tbmy8")
 texture_hover = ExtResource("7_jk1qb")
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b1u0b8xuy24kp"]
+
+[ext_resource type="Texture2D" uid="uid://d3ehevwonacdi" path="res://assets/white bg 1152x648 i think idk.png" id="1_spvsy"]
+[ext_resource type="FontFile" uid="uid://drlguo8ovg2x7" path="res://assets/audex/Audex-Regular.otf" id="2_gw1d4"]
+
+[node name="Credits" type="Node2D" unique_id=1250016199]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2099315336]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_spvsy")
+
+[node name="SCRAPER" type="RichTextLabel" parent="." unique_id=1004040603]
+offset_left = 45.0
+offset_top = 27.0
+offset_right = 504.0
+offset_bottom = 137.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.29954717, 0.29954758, 0.29954743, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/normal_font = ExtResource("2_gw1d4")
+theme_override_font_sizes/normal_font_size = 96
+text = "CREDITS-
+"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
