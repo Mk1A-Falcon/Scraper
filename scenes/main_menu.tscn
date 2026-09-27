@@ -1,7 +1,38 @@
 [gd_scene format=3 uid="uid://2yvq6yiiep7y"]
 
+[ext_resource type="Texture2D" uid="uid://d3ehevwonacdi" path="res://assets/white bg 1152x648 i think idk.png" id="1_l6cm7"]
+[ext_resource type="FontFile" uid="uid://drlguo8ovg2x7" path="res://assets/audex/Audex-Regular.otf" id="2_ekxnf"]
+
+[sub_resource type="Theme" id="Theme_l6cm7"]
+
 [node name="Main_Menu" type="Node2D" unique_id=1743025386]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1174820067]
 offset_right = 40.0
 offset_bottom = 40.0
+texture = ExtResource("1_l6cm7")
+
+[node name="Button" type="Button" parent="." unique_id=1543497427]
+offset_right = 8.0
+offset_bottom = 8.0
+theme = SubResource("Theme_l6cm7")
+
+[node name="Button2" type="Button" parent="." unique_id=1790243920]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="SCRAPER" type="RichTextLabel" parent="." unique_id=2060789923]
+offset_left = 333.00003
+offset_top = 100.0
+offset_right = 373.00003
+offset_bottom = 140.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.29954717, 0.29954758, 0.29954743, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/normal_font = ExtResource("2_ekxnf")
+theme_override_font_sizes/normal_font_size = 96
+text = "SCRAPER
+"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
