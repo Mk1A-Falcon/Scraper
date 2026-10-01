@@ -12,7 +12,6 @@
 [ext_resource type="Texture2D" uid="uid://djymp7yovtnns" path="res://assets/buttons/labeled/button_credits_normal.png" id="7_flqon"]
 [ext_resource type="Texture2D" uid="uid://d2lqts5yskr66" path="res://assets/buttons/labeled/button_quit_normal.png" id="7_jk1qb"]
 [ext_resource type="Texture2D" uid="uid://cu4kxhj4hsn7n" path="res://assets/buttons/labeled/button_quit_hover.png" id="8_5dd4i"]
-[ext_resource type="Texture2D" uid="uid://d2d1emylurri0" path="res://assets/scraps_logo.png" id="13_rcqid"]
 
 [node name="Main_Menu" type="Node2D" unique_id=1743025386]
 script = ExtResource("1_flqon")
@@ -62,27 +61,6 @@ layout_mode = 2
 texture_normal = ExtResource("8_5dd4i")
 texture_pressed = ExtResource("6_tbmy8")
 texture_hover = ExtResource("7_jk1qb")
-
-[node name="SCRAPER2" type="RichTextLabel" parent="." unique_id=782022073]
-offset_left = 9.0
-offset_top = 545.0
-offset_right = 468.0
-offset_bottom = 655.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0.29954717, 0.29954758, 0.29954743, 1)
-theme_override_constants/outline_size = 4
-theme_override_fonts/normal_font = ExtResource("2_ekxnf")
-theme_override_font_sizes/normal_font_size = 38
-text = "A submission to+
-"
-fit_content = true
-scroll_active = false
-autowrap_mode = 0
-
-[node name="ScrapsLogo" type="Sprite2D" parent="." unique_id=135718708]
-position = Vector2(108, 614)
-scale = Vector2(0.08, 0.08)
-texture = ExtResource("13_rcqid")
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
